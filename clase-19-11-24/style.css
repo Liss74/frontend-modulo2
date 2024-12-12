@@ -15,3 +15,49 @@ header{
 footer{
     background-color: #d4d4d4;
 }
+
+.menu{
+    list-style: none;
+}
+/* cambiamos de color la lista que tenemos en header */
+.enlace{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+/* cambia de color y se pone lineado al poner el mouse ahí */
+.enlace:hover{
+    color: #ffdc23;
+    text-decoration: underline;
+}
+/* Cambiamos de color y tamaño los subtitulos */
+.subtitulo{
+    font-size: 20px;
+    color: #412e5a;
+}
+/* Este es un bloque-linea por eso podemos modificar el ancho y largo, si fuera una linea no se aplica el cambio */
+.boton-contacto{
+    background-color: #5f00dd;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    border: none;
+}
+/* cambia de color cuando paso el mouse por el boton */
+.boton-contacto:hover{
+    background-color: #dd0000;
+}
+/* cambia de color cuando presiono el color */
+.boton-contacto:active{
+    background-color: #000;
+}
+
+.contacto div{
+    text-align: center;
+}
+
+#titulo-principal{
+    text-decoration: underline;
+    /* Utilizar los selectores de id con mucho cuidado.
+    Los id tienen una mayor especificidad en css, lo que puede causar problemas.  */
+}
