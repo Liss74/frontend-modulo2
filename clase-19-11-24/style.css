@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; /* Tipografía  */
+    line-height: 1.5;  /*Controla la altura de cada línea de texto para mejorar la legibilidad  */
+}
+
+header{
+    background-color: #311157;
+    color: #fff;
+    /* background: linear-gradient(blue, pink); Esto es para degradado */
+    text-align: center;
+    /* Text-align solo funciona en elemento en bloque porque afecta el contenido dentro del bloque.
+    No funciona en elementos en línea porque estos ocupan solo el espacio necesario para su contenido */
+}
+
+footer{
+    background-color: #d4d4d4;
+}
