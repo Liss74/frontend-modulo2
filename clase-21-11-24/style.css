@@ -5,6 +5,7 @@ body{
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    line-height: 1.8;
 }
 
 header{
@@ -57,4 +58,11 @@ h2{
     width: 150px;
     height: 30px;
     
+}
+
+.model{
+    padding: 20px;
+    border: 10px solid #007bff;
+    margin: 20px;
+
 }

@@ -46,6 +46,45 @@
             </span>
          </section>
 
+         <section>
+            <h2>El box model en acción.</h2>
+            <p>El box model afecta el espacio y diseño de cada elemento según su display</p>
+            <div>
+                <h3>Display: block</h3>
+                <p>Cada elemento de tipo block ocupa el ancho completo y se apilan uno debajo del otro.</p>
+                <p>El padding, border y margin funcionan como se espera.</p>
+                <div class="box block model">
+                    Bloque 1
+                </div>
+                <div class="box block model">
+                    Bloque 2
+                </div>
+            </div>
+           
+            <div>
+                <h3>Display: Inline</h3>
+                <p>Los elememtos inline se alinean horizontamente como texto.</p>
+                <p>El matgin horizontal(izquierda y derecha) funciona, pero el vertical (arriba y abajo) no afecta el flujo del documento, Es decir, se ignoran estas propiedades. </p>
+                <span class="box inline model">
+                    Inline 1
+                </span>
+                <span class="box inline model">
+                    Inline 2
+                </span>
+            </div>
+
+            <div>
+                <h3>Display: Inline-block</h3>
+                <p>Los elementos inline-block se alinean horizontalmente como inline, pero permiten usar width, height, padding, border y margin como los elementos de display block.</p>
+                <span class="box inline-block model">
+                    Inline-block 1
+                </span>
+                <span class="box inline-block model">
+                    Inline-block 2
+                </span>
+            </div>
+         </section>
+
     </main>
     <footer>
         2024 Lissette Torres. Todos los derechos reservados.
