@@ -1,0 +1,47 @@
+/* Reset báico */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header{
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+}
+
+section{
+    /* Los valores para la propidad border son tres separados cada uno por un espacio:
+    el primero es el grosor del borde
+    el segundo es el tipo de estilo del borde 
+    el tercero es el color*/
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px;
+}
+
+h2{
+    color: #007bff;
+}
+
+.box{
+    background-color: #e3f2fd;
+    border: 1px solid #007bff;
+    margin: 10px auto;
+    /* El valor auto en la propiedad de margin hace que el navegador calcule automáticamente el espacio necesario para centrar un elemento dentro de su contenedor padre siempre que el elemento tenga un ancho definido. ESTO ES SOLO EN EL ELEMENTO BLOQUE NO EN LÍNEA. Esta manera de centrar los elementos aplica de manera horizontal. */
+    padding: 10px;
+    text-align: center;
+}
+
+.block{
+    display: block;
+    width: 150px;
+    height: 30px;
+}
+
