@@ -1,3 +1,11 @@
+/* VARIABLES */
+:root{
+    --color-primario: #2a9d8f;
+    --color-secundario: #264653;
+    --color-background: #f4f4f4;
+    --color-texto: #333; 
+}
+
 /* Reset básico */
 
 /* con esto no tenemos que poner el tamaño de padding o borde, se puede hacer de unacomo en la última parte de la clase */
@@ -11,8 +19,8 @@ body{
     padding: 0;
     /* Estilos generales aplicados en body que se heredan a los hijos */
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
+    color: var(--color-texto);
+    background-color: var(--color-background) ;
     /* background-image: ; con este podemos poner una imagen de fondo */
 }
 
@@ -28,7 +36,7 @@ footer{
 
 /* Según la propiedad de especificidad se va a dar mayor prioridad a el selector que proporcione mejor contexto del elemento que quiere modificar, es decir el "header h1" es más específico que solo el h1 */
 header h1{
-    color: #2a9d8f; 
+    color: var(--color-primario); 
 }
 
 h1{
@@ -37,12 +45,12 @@ h1{
 
 .author{
     font-weight: bold;
-    color:#2a9d8f;
+    color:var(--color-primario);
 }
 
 .subtitle{
     font-size: 28px;
-    color: #264653;
+    color: var(--color-secundario);
 }
 
 .lista-tareas{
@@ -58,12 +66,12 @@ h1{
 
 .tarea-checkbox{
     margin-right: 10px;
-    accent-color: #2a9d8f;
+    accent-color: var(--color-primario);
     cursor: pointer;
 }
 
 .tarea-checkbox:checked + .tarea-descripcion{
     text-decoration: line-through;
     font-style: italic;
-    color: #264653;
+    color: var(--color-secundario);
 }
