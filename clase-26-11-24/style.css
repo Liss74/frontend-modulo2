@@ -39,3 +39,31 @@ h1{
     font-weight: bold;
     color:#2a9d8f;
 }
+
+.subtitle{
+    font-size: 28px;
+    color: #264653;
+}
+
+.lista-tareas{
+    list-style: none;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.lista-tareas li{
+    margin-bottom: 15px;
+
+}
+
+.tarea-checkbox{
+    margin-right: 10px;
+    accent-color: #2a9d8f;
+    cursor: pointer;
+}
+
+.tarea-checkbox:checked + .tarea-descripcion{
+    text-decoration: line-through;
+    font-style: italic;
+    color: #264653;
+}
