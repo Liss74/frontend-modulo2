@@ -16,11 +16,26 @@ body{
     /* background-image: ; con este podemos poner una imagen de fondo */
 }
 
+header, main, footer{
+    margin: 0;
+    padding: 20px;
+
+}
+
+footer{
+    text-align: center;
+}
+
 /* Según la propiedad de especificidad se va a dar mayor prioridad a el selector que proporcione mejor contexto del elemento que quiere modificar, es decir el "header h1" es más específico que solo el h1 */
 header h1{
-    color: blue;
+    color: #2a9d8f; 
 }
 
 h1{
     color: blueviolet;
+}
+
+.author{
+    font-weight: bold;
+    color:#2a9d8f;
 }
