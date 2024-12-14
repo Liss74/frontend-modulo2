@@ -91,3 +91,23 @@ color: #88b04b;
     order: -1;
 }
 
+/* FORMULARIO */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+button{
+    background-color: #a7c957;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #88b04b;
+}
