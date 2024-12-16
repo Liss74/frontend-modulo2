@@ -60,6 +60,30 @@ header{
     border-radius: 10px;
 }
 
+.categorias{
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+}
+
+.lista-categorias{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.Categoria-item{
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.Categoria-item img{
+    width: 150;
+    height: 150;
+    border-radius: 50%;
+}
+
 footer{
     text-align: center;padding: 10px;
 }
