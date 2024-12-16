@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+
+        <h1>Explorando la propiedad CSS: Position</h1>
+    
+        <!-- Static -->
+        <section class="position-example">
+            <h2>Static</h2>
+            <p>Este es el valor por defecto. Los elementos no se ven afectados por las propiedades <b>top</b>, <b>left</b>, <b>right</b>, o <b>bottom</b>.</p>
+            <div class="container">
+                <div class="box">Hijo 1</div>
+                <div class="box static">Hijo 2</div>
+                <div class="box">Hijo 3</div>
+            </div>
+        </section>
+    
+        <!-- Relative -->
+        <section class="position-example">
+            <h2>Relative</h2>
+            <p>El elemento se posiciona relativo a su posición original. Las propiedades <b>top</b> y <b>left</b> permiten moverlo desde esa posición inicial.</p>
+            <div class="container">
+                <div class="box">Hijo 1</div>
+                <div class="box relative">Hijo 2</div>
+                <div class="box">Hijo 3</div>
+            </div>
+        </section>
+    
+        <!-- Absolute -->
+        <section class="position-example">
+            <h2>Absolute</h2>
+            <p>El elemento se posiciona respecto al primer ancestro con un valor de posición distinto a <b>static</b>. Si no hay ancestro, se posiciona respecto al <b>body</b>.</p>
+            <div class="container relative-parent">
+                <div class="box">Hijo 1</div>
+                <div class="box absolute">Hijo 2</div>
+                <div class="box">Hijo 3</div>
+            </div>
+
+            <div class="container relative-parent">
+                <div class="box">Hijo 1</div>
+                <div class="box">
+                    Hijo 2
+                    <div class=" box nieto absolute">Nieto 2.1</div>
+                </div>
+                <div class="box">Hijo 3</div>
+            </div>
+
+            <div class="container">
+                <div class="box">Hijo 1</div>
+                <div class="box absolute">Hijo 2</div>
+                <div class="box">Hijo 3</div>
+            </div>
+        </section>
+    
+        <!-- Fixed -->
+        <section class="position-example">
+            <h2>Fixed</h2>
+            <p>El elemento se posiciona en relación con la ventana del navegador y no se desplaza cuando se hace scroll.</p>
+            <div class="container">
+                <div class="box">Hijo 1</div>
+                <div class="box fixed">Hijo 2</div>
+
+                <div class="box fixed segundo">Hijo 2.1</div>
+                <div class="box">Hijo 3</div>
+            </div>
+        </section>
+    
+        <!-- Sticky -->
+        <section class="position-example">
+            <h2>Sticky</h2>
+            <p>El elemento se comporta como <b>relative</b> hasta que alcanza un umbral definido por <b>top</b>, momento en el cual se comporta como <b>fixed</b>.</p>
+            <div class="container sticky-parent">
+                <div class="box">Hijo 1</div>
+                <div class="box sticky">Hijo 2</div>
+                <div class="box">Hijo 3</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Tema de position</p>
+    </footer>
+</body>
+
+</html>
