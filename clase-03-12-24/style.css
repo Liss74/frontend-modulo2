@@ -94,11 +94,13 @@ header{
     gap: 30px;
     padding: 10px;
     overflow-x: auto; /* El contenedor permita un desplazamiento horizontal */
-    scroll-snap-type: x mandatory ;
+    scroll-snap-type: x mandatory ; /* Me ayuda a definir como se comportan los puntos de desplazamiento de mi contenedor
+    x: me indica que el desplazamiento se está haciendo en el eje x
+    mandatory: el scroll se ajustará al siguiente punto de ajuste definido */
 }
 
 .producto-item{
-    scroll-snap-align: start;
+    scroll-snap-align: start; /*Definir cómo los elementos individuales dentro de un contenedor de scroll se alínean cuando se ajustan  */
     text-align: center;
     text-decoration: none;
     color: #333;
